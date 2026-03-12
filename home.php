@@ -32,8 +32,10 @@ while ($row = mysqli_fetch_assoc($resultado)) {
     "<tr>
         <td>Nome: " . $row["nome"] . "</td>  
         <td> Preço: " . $row["preco"] . "</td>  
-        <td> Quantidade: " . $row["quantidade"] . "</td>
-    </tr>";
+        <td> Quantidade: " . $row["quantidade"] . "</td>"  . 
+        "<td> reservado </td>" . 
+        "<td> reservado </td>" .
+    "</tr>";
 }
 echo "<br>";
 ?>
