@@ -28,12 +28,17 @@ $resultado = mysqli_query($conexao, $query);
 
 
 while ($row = mysqli_fetch_assoc($resultado)) {
-    echo "ID: " . $row["id"] . " - Nome: " . $row["nome"] . " - Preço: " . $row["preco"] . " - Quantidade: " . $row["quantidade"] . "<br>";
+    echo     
+    "<tr>
+        <td>Nome: " . $row["nome"] . "</td>  
+        <td> Preço: " . $row["preco"] . "</td>  
+        <td> Quantidade: " . $row["quantidade"] . "</td>
+    </tr>";
 }
 echo "<br>";
 ?>
 
-<table>
+</table>
 
 <hr>
 
