@@ -13,6 +13,10 @@ $resultado = mysqli_query($conexao, $query);
 
 ?>
 
+<br>
+<a href="inserir.php">Inserir novo produto</a>
+<br>
+
 <table border="1">
     <tr>
         <th>Nome</th>
