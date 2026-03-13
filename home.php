@@ -37,7 +37,16 @@ while ($row = mysqli_fetch_assoc($resultado)) {
         <td>Nome: " . $row["nome"] . "</td>  
         <td> Preço: " . $row["preco"] . "</td>  
         <td> Quantidade: " . $row["quantidade"] . "</td>"  . 
-        "<td> reservado </td>" . 
+        "<td> 
+           
+        
+            <form action='remover.php' method='POST'>
+                <input type='hidden' name='id_para_ser_removido' value='" . $row["id"] . "'>
+                <input type='submit' value='Remover'>
+            </form>
+            
+        
+        </td>" . 
         "<td> reservado </td>" .
     "</tr>";
 }
