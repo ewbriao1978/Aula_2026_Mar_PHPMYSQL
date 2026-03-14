@@ -18,7 +18,7 @@
     <input type="number" name="quantidade" required><br><br>
 
     <input type="submit" value="Inserir Produto">   
-    
+</form>
 </body>
 </html>
 

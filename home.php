@@ -46,8 +46,20 @@ while ($row = mysqli_fetch_assoc($resultado)) {
             </form>
             
         
-        </td>" . 
-        "<td> reservado </td>" .
+        </td>" .
+        
+        
+        "<td> 
+        
+
+            <form action='form_edit.php' method='POST'>
+                <input type='hidden' name='id_para_ser_editado' value='" . $row["id"] . "'>
+                <input type='submit' value='Editar'>
+            </form>
+
+
+        </td>" .
+        
     "</tr>";
 }
 echo "<br>";
