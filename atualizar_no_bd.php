@@ -1,11 +1,12 @@
 <?php
+require_once 'db.php';
 
 $id_para_ser_editado = $_POST["id_para_ser_atualizado"];
 $nome = $_POST["nome"];
 $preco = $_POST["preco"];
 $quantidade = $_POST["quantidade"];
 
-$conexao = mysqli_connect("localhost", "root", "", "aulaprog");
+$conexao = getConexao();
 if (!$conexao) {
     die("Falha na conexão: " . mysqli_connect_error());
 }

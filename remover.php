@@ -1,8 +1,9 @@
 <?php
+    require_once 'db.php';
 
     $id = $_POST["id_para_ser_removido"];
 
-    $conexao = mysqli_connect("localhost", "root", "", "aulaprog");
+    $conexao = getConexao();
 
     if (!$conexao) {
         die("Falha na conexão: " . mysqli_connect_error());
